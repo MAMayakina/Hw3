@@ -13,12 +13,12 @@ public class Main {
         System.out.println("Hello"+m);
 
         //задание 2
-        float number1 = 78.2f;
-        float number2 = 82.7f;
-        float sum = number1 + number2;
+        float boxer1 = 78.2f;
+        float boxer2 = 82.7f;
+        float sum = boxer1 + boxer2;
         System.out.println("Общий вес боксеров: "+ sum);
-        float dif = number2 - number1;
-        System.out.println("Разница в весе боксеров: "+ dif);
+        float dif = boxer2 - boxer1;
+        System.out.println("Разница в весе боксеров: "+ Math.abs(dif));
 
         //задание 3
         int banana = 5;
@@ -30,22 +30,22 @@ public class Main {
         int egg = 4;
         int weightEgg = 70;
 
-        int totalWeightGr = banana * weightBanana + milk*weightMilk/100 + iceCream * weighticeCream + egg * weightEgg;
+        float totalWeightGr = banana * weightBanana + milk*weightMilk/100 + iceCream * weighticeCream + egg * weightEgg;
         System.out.println("Общий вес завтрака: "+ totalWeightGr + "гр");
 
         float totalWeightKg = totalWeightGr/1000;
         System.out.println("Общий вес завтрака: "+ totalWeightKg + "кг");
 
         //задание 4
-        int weightLoss = 7;
-        int lossMin = 250;
-        int lossMax = 500;
-        int dayLossMin = weightLoss*1000/lossMin;
-        int dayLossMax = weightLoss*1000/lossMax;
-        int averageDay = (dayLossMax+dayLossMin)/2;
+        int weightLoss = 7000;
+        int loss1 = 250;
+        int loss2 = 500;
+        float dayLoss1 = weightLoss/loss1;
+        float dayLoss2 = weightLoss/loss2;
+        float averageDay = (dayLoss1+dayLoss2)/2;
 
-        System.out.println("Минимальное количество дней: "+ dayLossMin);
-        System.out.println("Максимальное количество дней: "+ dayLossMax);
+        System.out.println("Минимальное количество дней: "+ dayLoss1);
+        System.out.println("Максимальное количество дней: "+ dayLoss2);
         System.out.println("Среднее количество дней: "+ averageDay);
 
         //задание 5
@@ -53,9 +53,9 @@ public class Main {
         int salaryDenisNow = 83690;
         int salaryKristinaNow = 76230;
 
-        int salaryMashaNew = (int) (salaryMashaNow * 1.1);
-        int salaryDenisNew = (int) (salaryDenisNow * 1.1);
-        int salaryKristinaNew = (int) (salaryKristinaNow * 1.1);
+        int salaryMashaNew = salaryMashaNow+salaryMashaNow/10;
+        int salaryDenisNew = salaryDenisNow+salaryDenisNow/10;
+        int salaryKristinaNew = salaryKristinaNow+salaryKristinaNow/10;
 
         int Month = 12;
         int increaseMasha = (salaryMashaNew - salaryMashaNow)*Month;
