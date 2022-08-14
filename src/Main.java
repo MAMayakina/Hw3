@@ -53,14 +53,14 @@ public class Main {
         int salaryDenisNow = 83690;
         int salaryKristinaNow = 76230;
 
-        int salaryMashaNew = salaryMashaNow+salaryMashaNow/10;
-        int salaryDenisNew = salaryDenisNow+salaryDenisNow/10;
-        int salaryKristinaNew = salaryKristinaNow+salaryKristinaNow/10;
+        float salaryMashaNew = (float) (salaryMashaNow*1.1);
+        float salaryDenisNew = (float) (salaryDenisNow*1.1);
+        float salaryKristinaNew = (float) (salaryKristinaNow*1.1);
 
         int Month = 12;
-        int increaseMasha = (salaryMashaNew - salaryMashaNow)*Month;
-        int increaseDenis = (salaryDenisNew - salaryDenisNow)*Month;
-        int increaseKristina = (salaryKristinaNew - salaryKristinaNow)*Month;
+        float increaseMasha = (salaryMashaNew - salaryMashaNow)*Month;
+        float increaseDenis = (salaryDenisNew - salaryDenisNow)*Month;
+        float increaseKristina = (salaryKristinaNew - salaryKristinaNow)*Month;
 
         System.out.println("Новая з/п Маши: "+ salaryMashaNew + " руб. Ее годовой доход вырос на "+ increaseMasha+ " руб.");
         System.out.println("Новая з/п Дениса: "+ salaryDenisNew + " руб. Его годовой доход вырос на "+ increaseDenis+ " руб.");
